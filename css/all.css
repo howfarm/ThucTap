@@ -1,0 +1,48 @@
+.body{
+    width: 100%!important;
+    padding: 0!important;
+    margin: 0!important;
+}
+.block-img{
+    display: block;
+}
+.img-center{
+    margin: 0 auto;
+}
+header .logo{
+    max-height: 90px;
+    max-width: 200px;
+}
+
+.size-img{
+    height: 550px;
+    width: 100%;
+}
+.icon-img{
+    border-radius: 50%;
+    background-color: #396fcc;
+}
+.box-shadow{
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.14);
+}
+.align{
+    position: absolute;
+  top: 0%;
+  padding: 10px;
+}
+.bor-top{
+    border-top: 1px solid #e2e2e2;
+}
+.maxh{
+    height: auto; 
+    width: auto; 
+    max-width: 100px; 
+    max-height: 100px;
+}
+.panel-title{
+    cursor: pointer;
+    padding-top: 20px;
+}
+.panel-title:hover{
+    text-decoration: underline
+}

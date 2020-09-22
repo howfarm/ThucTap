@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>QT-Data</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/id.css ">
+    <link rel="stylesheet" href="css/all.css ">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+    <script src="index.js"></script>
+    <link rel="icon"
+        href="https://secureservercdn.net/198.71.233.138/d0y.65e.myftpupload.com/wp-content/uploads/2019/08/cropped-site-icon-32x32.png"
+        sizes="32x32" />
+</head>
+
+<body ng-app="myApp">
+    <div class="w-100">
+        <header>
+            <div class=" position-fixed w-100 bg-white box-shadow" style="z-index: 100;">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <div class="container">
+                        <a class="navbar-brand" href="#"><img src="header-logo.png" class="logo"></a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent" style="margin-left: 100px;">
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item ">
+                                    <a class="nav-link" href="#"><span class="hover">Trang Chủ</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class=" nav-link" href="#!hoidap"> <span class="hover">Hỏi Đáp</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"> <span class="hover">Liên Hệ</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"> <span class="hover">Diễn Đàn</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#!tintuc"> <span class="hover">Tin tức</span></a>
+                                </li>
+                            </ul>
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span
+                                            class="hover">Tài khoản</span>
+                                    </a>
+                                    <div class="dropdown-menu text-center" aria-labelledby="navbarDropdown"
+                                        style="min-width: 12rem;">
+                                        <p style="padding-top: 20px;">Welcome to QT-Data</p>
+                                        <div class="dropdown-divider"></div>
+                                        <button type="button" class="btn btn-success w-75" data-toggle="modal"
+                                            data-target="#exampleModalCenter" href="#">Join</button>
+                                        <!-- <a class="dropdown-item" href="#">Another action</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">Something else here</a> -->
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div ng-view>
+
+            </div>
+            <div>
+                <footer style="background-color: #333333;">
+                    <div class="container" style="padding-top: 40px;">
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <div style="width: 18rem;">
+                                    <div class="card-body">
+                                        <h6 class="card-subtitle mb-2">CANADA</h6>
+                                        <p class="card-text">Saskatchewan Office<br />
+                                            Phone: +1 306 491 8799<br />
+                                            E-mail: info@qntdata.com<br /><br />
+                                            British Columbia Office<br />
+                                            Phone: +1 306 491 8799<br />
+                                            E-mail: info.canada@qntdata.com</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div style="width: 18rem;">
+                                    <div class="card-body">
+                                        <h6 class="card-subtitle mb-2">VIETNAM</h6>
+                                        <p class="card-text">
+                                            Ho Chi Minh Office<br />
+                                            Phone: +84 904 917 075<br />
+                                            E-mail: info.vietnam@qntdata.com<br /><br />
+
+                                            Da Nang Office<br />
+                                            Phone: +84 904 917 075<br />
+                                            E-mail: info.danang@qntdata.com</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div style="width: 18rem;">
+                                    <div class="card-body">
+                                        <h6 class="card-subtitle mb-2">QUICK LINKS</h6>
+                                        <p class="card-text">
+                                            About Us<br />
+                                            Our Team<br />
+                                            Careers<br />
+                                            Partnerships</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3 d-flex align-items-end">
+                                <div style="width: 18rem;">
+                                    <div class="card-body ">
+                                        <img class="w-100" style="border-radius: 50%!important;" src="logo.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div style="width: 18rem;">
+                                    <div class="card-body">
+                                        <h6 class="card-subtitle mb-2">US</h6>
+                                        <p class="card-text">
+                                            US Office<br />
+                                            Phone: +1 858 258 3151<br />
+                                            E-mail: info.us@qntdata.com</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr />
+                        <div class="row" style="padding-bottom: 20px;">
+                            <div class="col-sm-2">
+                                <div>
+
+                                </div>
+                            </div>
+                            <div class="col-sm-6 img-center">
+                                <div class="row ">
+                                    <img src="icon/siteseal_gd_3_h_d_m.gif" alt="">
+                                    <div class="d-flex align-items-center" style="font-size: 12px; color: #999;">
+                                        Copyright ©
+                                        2020 QT-Data Inc. Canada. All rights reserved</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+            <!-- modal-form -->
+            <!-- Button trigger modal -->
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+                aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" style="max-width: 1000px!important" role="document">
+                    <div class="modal-content">
+                        <div class="row">
+                            <div class="col-sm-7">
+                                <img class="w-100" src="QT-img/10.png" alt="">
+                            </div>
+                            <div class="col-sm-5" style="padding-right:50px ;">
+                                <ul class="nav nav-tabs" id="myTab" role="tablist" style="margin-top: 50PX;">
+                                    <li class="nav-item w-50">
+                                        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home"
+                                            role="tab" aria-controls="home" aria-selected="true">
+                                            <h3 style="color: #804028;">LOG IN</h3>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item  w-50">
+                                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile"
+                                            role="tab" aria-controls="profile" aria-selected="false">
+                                            <h3 style="color: #804028;">SIGN UP</h3>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="tab-content" id="myTabContent" style="margin-top: 20PX;">
+                                    <div class="tab-pane fade show active" id="home" role="tabpanel"
+                                        aria-labelledby="home-tab">
+                                        <h3>Log In To QT-Data</h3>
+                                        <form class="login-form" style="margin-top: 20PX;">
+                                            <div class="form-group">
+                                                <input type="email" class="form-control rounded-pill form-control-lg"
+                                                    placeholder="Email">
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="password" class="form-control rounded-pill form-control-lg"
+                                                    placeholder="Password">
+                                            </div>
+                                            <div class="forgot-link d-flex align-items-center justify-content-between">
+                                                <div class="form-check">
+                                                    <label for="remember"></label>
+                                                </div>
+                                                <a class="forgot" data-dismiss="modal" data-toggle="modal"
+                                                    data-target="#exampleModalCenter2" style="font-size: 15px;">Forgot
+                                                    password?</a>
+                                            </div>
+                                            <button type="submit"
+                                                class="btn mt-3 btn-success btn-block text-uppercase rounded-pill form-control-lg">LOG
+                                                IN</button>
+                                        </form>
+                                    </div>
+                                    <div class="tab-pane fade" id="profile" role="tabpanel"
+                                        aria-labelledby="profile-tab">
+                                        <h3>Sign up to QT-Data</h3>
+                                        <form class="login-form text-center">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control rounded-pill form-control-lg"
+                                                    placeholder="Full name">
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="email" class="form-control rounded-pill form-control-lg"
+                                                    placeholder="Email">
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="password" class="form-control rounded-pill form-control-lg"
+                                                    placeholder="Password">
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="Date" class="form-control rounded-pill form-control-lg"
+                                                    placeholder="BirthDay">
+                                            </div>
+                                            <div class="forgot-link d-flex align-items-center justify-content-between">
+                                                <div class="form-check">
+                                                    <input type="radio" class="form-check-input" id="remember">
+                                                    <label for="remember">By signing up, you agree to QT-Data's Terms of
+                                                        Use, Privacy Policy and Cookie Policy.</label>
+                                                </div>
+                                            </div>
+                                            <button type="submit"
+                                                class="btn mt-3 btn-success btn-block text-uppercase rounded-pill form-control-lg">SIGN
+                                                UP</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- end modal -->
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModalCenter2" tabindex="-1" role="dialog"
+                aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <form class="login-form text-center" style="padding: 20px;">
+                            <h3 class="mb-3 font-weight-light text-uppercase">Forgot password</h3>
+                            <div class="form-group">
+                                <input type="email" class="form-control rounded-pill form-control-lg"
+                                    placeholder="Email">
+                            </div>
+                            <button type="submit"
+                                class="btn mt-3 btn-success btn-block text-uppercase rounded-pill form-control-lg">SUBMIT</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
